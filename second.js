@@ -19,18 +19,20 @@ movies.push({ title: "Howard the Duck", director: "Willard Huyck", genre: "Actio
 
 // sorting functions below
 
-movie_titles = movies.sort(function(film1 , film2) {
-  if(film1.title < film2.title) return -1
-  if(film1.title > film2.title) return 1
+
+movie_rating = movies.sort(function(film1 , film2) {
+  if(film2.stars < film1.stars) return -1
+  if(film2.stars > film1.stars) return 1
   return 0
 })
-console.log(movie_titles)
-
+console.log(movie_rating)
 
 // Building my tables below
 
-movie_titles.forEach(function(x){
-  my_table_array = ""
+
+
+movie_rating.forEach(function(x){
+   my_table_array = ""
     my_table_array += "<tr><td>" + x.title + "</td>"
     my_table_array += "<td>" + x.director + "</td>"
     my_table_array += "<td>" + x.genre + "</td>"
@@ -38,10 +40,8 @@ movie_titles.forEach(function(x){
     my_table_array += "<td>" + x.actors.join(", ") + "</td>"
     my_table_array += "<td>" + x.stars + "</td>"
     my_table_array += "<td>" + x.metascore + "</td></tr>"
-    document.getElementById('movie_data').innerHTML += my_table_array
+    document.getElementById('movie_stars').innerHTML += my_table_array
 })
-
-
 
 
 console.log(JSON.stringify(movie_titles))
