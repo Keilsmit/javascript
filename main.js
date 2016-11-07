@@ -24,7 +24,7 @@ movie_titles.forEach(function(x){
     my_table_array += "<td>" + x.director + "</td>"
     my_table_array += "<td>" + x.genre + "</td>"
     my_table_array += "<td>" + x.year + "</td>"
-    my_table_array += "<td>" + x.actors + "</td>"
+    my_table_array += "<td>" + x.actors.join(", ") + "</td>"
     my_table_array += "<td>" + x.stars + "</td>"
     my_table_array += "<td>" + x.metascore + "</td></tr>"
 
