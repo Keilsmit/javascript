@@ -1,0 +1,16 @@
+header {
+  background-image: url(clipart.jpg);
+  display: inline-block;
+  background-color: white;
+  background-repeat: no-repeat;
+  border-bottom: 2px white;
+  height: 250px;
+  width: 350px;
+}
+
+.big_text {
+  margin-top: 100px;
+  padding-bottom: -200px;
+  display: block;
+  text-align: center;
+}
